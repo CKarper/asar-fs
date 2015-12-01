@@ -1,7 +1,7 @@
 {
-  "name": "tmp",
+  "name": "asar-fs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rudimentary fs.js and module.js patches to allow loading files from an atom/asar archive",
   "main": "index.js",
   "dependencies": {
     "asar": "^0.8.3",
@@ -11,6 +11,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "CKarper",
   "license": "ISC"
 }
