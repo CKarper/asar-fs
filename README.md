@@ -20,3 +20,8 @@ This will monkeypatch built-in modules for asar reading capabilities.  Modules c
 
 ### unpatch()
 This will remove any installed monkeypatches, restoring all modules back to their original state.
+
+---
+
+[asar]: https://github.com/atom/asar
+[grunt-asar]: https://github.com/bwin/grunt-asar
