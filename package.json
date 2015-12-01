@@ -1,16 +1,21 @@
 {
+  "author": "Christopher Karper <Christopher.Karper@gmail.com>",
   "name": "asar-fs",
   "version": "1.0.0",
   "description": "Rudimentary fs.js and module.js patches to allow loading files from an atom/asar archive",
+  "license": "MIT",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ckarper/asar-fs.git"
+  },
   "dependencies": {
     "asar": "^0.8.3",
+  },
+  "devDependencies": {
     "moment": "^2.10.6"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
-  "author": "CKarper",
-  "license": "ISC"
 }
