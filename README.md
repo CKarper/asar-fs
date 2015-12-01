@@ -2,7 +2,7 @@
 A rudimentary fs and module monkeypatch to support loading files and modules from an atom/asar archive.
 
 ## Installation
-```npm i asar-fs```   << Not actually working yet, just clone from github for the time being.
+```npm i asar-fs```
 
 ## Usage
 
