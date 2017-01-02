@@ -1,7 +1,7 @@
 {
   "author": "Christopher Karper <Christopher.Karper@gmail.com>",
   "name": "asar-fs",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Rudimentary fs.js and module.js patches to allow loading files from an atom/asar archive",
   "license": "MIT",
   "main": "index.js",
