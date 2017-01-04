@@ -1,6 +1,6 @@
 # asar-fs
 [![Build Status](https://travis-ci.org/CKarper/asar-fs.svg?branch=master)](https://travis-ci.org/CKarper/asar-fs)
-[![dependencies Status](https://david-dm.org/ckarper/asar-fs/status.svg)](https://david-dm.org/ckarper/asar-fs)
+[![Coverage Status](https://coveralls.io/repos/github/CKarper/asar-fs/badge.svg?branch=master)](https://coveralls.io/github/CKarper/asar-fs?branch=master)[![dependencies Status](https://david-dm.org/ckarper/asar-fs/status.svg)](https://david-dm.org/ckarper/asar-fs)
 [![npm version](https://badge.fury.io/js/asar-fs.svg)](https://badge.fury.io/js/asar-fs)
 
 A rudimentary fs and module monkeypatch to support loading files and modules from an atom/asar archive.

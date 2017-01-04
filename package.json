@@ -16,6 +16,7 @@
     "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
+    "coveralls": "^2.11.15",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
