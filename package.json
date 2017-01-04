@@ -60,5 +60,10 @@
         }
       ]
     }
+  },
+  "greenkeeper": {
+    "ignore": [
+      "eslint-plugin-jsx-a11y"
+    ]
   }
 }
