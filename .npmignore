@@ -36,4 +36,11 @@ node_modules
 
 tests
 .eslintrc
+.babelrc
 .travis.yml
+
+# Source files
+lib
+
+# Source maps
+dist/*.map

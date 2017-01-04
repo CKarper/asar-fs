@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/monkey.js');
+module.exports = require('./dist/monkey.js');

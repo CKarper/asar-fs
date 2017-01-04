@@ -14,18 +14,24 @@
   },
   "devDependencies": {
     "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "nyc": "^10.0.0",
+    "rimraf": "^2.5.4",
     "xo": "^0.17.1"
   },
   "scripts": {
-    "test": "asar p test/fixture/asar test/_test.asar && xo && nyc ava test/*.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel --presets latest lib -d dist",
+    "test": "npm run build && npm run lint && asar p test/fixture/asar test/_test.asar && nyc ava test/*.js",
     "lint": "xo",
-    "xo": "xo"
+    "xo": "xo",
+    "prepublishOnly": "npm run build"
   },
   "xo": {
     "space": true,

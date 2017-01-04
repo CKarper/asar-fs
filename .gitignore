@@ -36,3 +36,6 @@ node_modules
 
 # Test generated ASAR file
 test/_*.asar
+
+# Babel compiled files
+dist
