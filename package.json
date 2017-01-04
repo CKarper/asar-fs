@@ -13,9 +13,45 @@
     "asar": "^0.12.4"
   },
   "devDependencies": {
-    "moment": "^2.17.1"
+    "ava": "^0.17.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "nyc": "^10.0.0",
+    "xo": "^0.17.1"
   },
   "scripts": {
-    "test": "node test/index.js"
+    "test": "asar p test/fixture/asar test/_test.asar && xo && nyc ava test/*.js",
+    "lint": "xo",
+    "xo": "xo"
+  },
+  "xo": {
+    "space": true,
+    "extends": "airbnb",
+    "rules": {
+      "brace-style": [
+        "error",
+        "stroustrup",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "no-plusplus": [
+        "error",
+        {
+          "allowForLoopAfterthoughts": true
+        }
+      ],
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "**/*.test.js"
+          ]
+        }
+      ]
+    }
   }
 }

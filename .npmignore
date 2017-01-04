@@ -34,5 +34,6 @@ node_modules
 # Optional REPL history
 .node_repl_history
 
-# Test generated ASAR file
-test/_*.asar
+tests
+.eslintrc
+.travis.yml
