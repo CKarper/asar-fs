@@ -10,10 +10,6 @@ node_js:
 env:
   - CXX=g++-4.8
 
-branches:
-  only:
-  - master
-
 notifications:
   email:
     on_success: never
