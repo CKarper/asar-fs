@@ -1,11 +1,10 @@
 /* eslint-disable no-param-reassign */
-// import assert from 'assert';
 
 import fs from 'fs';
 import path from 'path';
 import test from 'ava';
 
-import AsarFs from '..';
+import AsarFs from '../dist';
 
 const asarFs = new AsarFs(path.join(__dirname, '_test.asar'));
 
@@ -96,18 +95,18 @@ test('monkey patched readFileSync - nonexistent file', (t) => {
 
 test('monkey patched require - specified file', (t) => {
   // eslint-disable-next-line global-require, import/no-unresolved, import/no-dynamic-require
-  const temp = require('./temp.js');
+  const nike = require('./nike.js');
 
-  t.is(typeof temp.nike, 'function');
-  t.is(temp.nike(), 'Just do it!');
+  t.is(typeof nike.nike, 'function');
+  t.is(nike.nike(), 'Just do it!');
 });
 
 test('monkey patched require - inferred extension [.js]', (t) => {
   // eslint-disable-next-line global-require, import/no-unresolved, import/no-dynamic-require
-  const temp = require('./temp');
+  const nike = require('./nike');
 
-  t.is(typeof temp.nike, 'function');
-  t.is(temp.nike(), 'Just do it!');
+  t.is(typeof nike.nike, 'function');
+  t.is(nike.nike(), 'Just do it!');
 });
 
 test('monkey patched require - inferred extension [.json]', (t) => {

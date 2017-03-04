@@ -1,9 +1,9 @@
 /* eslint no-underscore-dangle: 0 */
 
-const path = require('path');
-const asar = require('asar');
-const disk = require('asar/lib/disk.js');
-const Module = require('module');
+import path from 'path';
+import asar from 'asar';
+import disk from 'asar/lib/disk';
+import Module from 'module';
 
 let _archFs;
 const _original = {};
