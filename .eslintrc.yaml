@@ -1,0 +1,16 @@
+extends: airbnb
+rules:
+  brace-style:
+    - error
+    - stroustrup
+    - allowSingleLine: true
+  no-empty:
+    - error
+    - allowEmptyCatch: true
+  no-plusplus:
+    - error
+    - allowForLoopAfterthoughts: true
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+      - '**/*.test.js'

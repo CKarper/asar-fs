@@ -23,7 +23,7 @@ addons:
       - g++-4.8
 
 before_install:
-  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
+  - if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
 
 after_success:
   - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
