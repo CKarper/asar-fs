@@ -10,7 +10,7 @@
     "url": "git://github.com/ckarper/asar-fs.git"
   },
   "dependencies": {
-    "asar": "^0.13.0"
+    "asar": "^0.14.2"
   },
   "devDependencies": {
     "ava": "^0.19.0",
