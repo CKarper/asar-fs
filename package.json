@@ -22,7 +22,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
     "eslint-plugin-react": "^6.9.0",
-    "nyc": "^11.0.2",
+    "nyc": "^15.0.1",
     "rimraf": "^2.5.4"
   },
   "scripts": {
